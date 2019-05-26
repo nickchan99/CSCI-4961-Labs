@@ -2,6 +2,7 @@
 
 #### Email: chann3@rpi.edu
 #### Github: nickchan99
+#### Mattermost handle: @nickchan
 #### Slack-linked email: chann3@rpi.edu
 #### Slack handle: Nick Chan
 

@@ -19,3 +19,33 @@ Another helpful techniuqe for answering questions is to draw diagrams or picutre
 ### Chapter 3 of Free Culture: Catalogs
 
 From reading this chapter, it appears that the RIAA sued the creator of a tool for solving a problem that the creator had not considered. In Tuesday's lecture, it was mentioned that a great tool has many more uses than what it was designed for. In the case of Jesse Jordan, he came up with a very powerful Intranet search engine, but the end users had used it to store music files in a public folder on the network. The people that used the tool for this wanted to circumvent any kind of payment for music, so they shared and downloaded files from this server. It could be possilbe that they felt the rest of the internet could not access the folder on RPI's network, so they went through with it. I find it bizarre that the application of a filesystem included in Windows to simply check and see if a network computer was online resulted in a piracy lawsuit. The RIAA would have had valid grounds to sue on if Jesse had explicitly set up the network to share music. If he did not, then the suit was seemingly pointless in terms of punishing someone for wrongdoing. Additionally, I feel that entities like the RIAA that lobby are the scourge of democratic government, but that is a topic for another time. The unfortunate targeting of Jesse by the RIAA is concerning, especially today. Tons and tons of open source projects exist on the web. The idea that an established corporation can sue a volounteer for what users do with that person's project is a failure of the legal system. 
+
+### Linux Setup
+
+![](man&#32;tree.png)
+
+### Regex Practice
+
+![Problem 1](p1.png)
+![Problem 2](p2.png)
+![Problem 3](p3.png)
+![Problem 4](p4.png)
+![Problem 5](p5.png)
+![Problem 6](p6.png)
+![Problem 7](p7.png)
+
+### Regex Crosswords
+
+![Problem 1](puzzle_1.png)
+![Problem 2](puzzle_2.png)
+![Problem 3](puzzle_3.png)
+![Problem 4](puzzle_4.png)
+
+### Blocky Maze
+
+![](done.png)
+![](solution.png)
+
+### Project Search Reflection
+
+Currently, I would be open to working on any open source project. It makes the most sense to work on a project in a domain I already know. To find a project, I'll be searching collections of open source projects, like [opensource.google](https://opensource.google.com/projects/explore/featured). In addition, I'll be looking for "first-timers-only issues" in open source repos so I can get a good feel for contributing to projects. 

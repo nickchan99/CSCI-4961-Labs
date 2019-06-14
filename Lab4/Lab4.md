@@ -16,7 +16,8 @@ Freedom 3: The changes a user makes to a program may be redistributed, so that t
 Choosing a license is important since many different kinds of licenses exist, and guaranteeing users certain freedoms is important on
 a project by project basis. Without a license, users may use your project in unintended ways or manupilate the project maliciously and cite
 your source code. Additionally, the future marketability of a project is affected by what license the project uses. Lack of a license implies
-that all rights are reserved, so people can avoid using your repository in fear of violating copyright law.
+that all rights are reserved, so people can avoid using your repository in fear of violating copyright law. Picking the right licnese also
+reserves certain rights to you, as the copyright holder.
 
 #### 4)
 Using a project without a license is basically using someone else's private works. A project without a license insn't open source, the code

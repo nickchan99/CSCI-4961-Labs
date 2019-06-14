@@ -6,7 +6,7 @@ This is licensed under CC-BY-4.0 http://creativecommons.org/licenses/by/4.0/ U- 
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png)
 
 #### 2)
-The four principles of software are:  
+The four principles of free software are:  
 Freedom 0: The freedom to run software as the user wishes for any purpose.  
 Freedom 1: The freedom to study and alter the functionality of a program to fit the users needs. This implies that the source code is open.  
 Freedom 2: The source code may be redistributed with the goal of helping others.  

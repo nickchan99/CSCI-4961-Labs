@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Nick/Desktop/OSS/Lab5-Lab-Example/combined_makefile
+CMAKE_SOURCE_DIR = /mnt/c/Users/Nick/Desktop/OSS/Lab5-Lab-Example/combined_makefile_cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Nick/Desktop/OSS/Lab5-Lab-Example/combined_makefile
+CMAKE_BINARY_DIR = /mnt/c/Users/Nick/Desktop/OSS/Lab5-Lab-Example/combined_makefile_cmake
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Nick/Desktop/OSS/Lab5-Lab-Example/combined_makefile/CMakeFiles /mnt/c/Users/Nick/Desktop/OSS/Lab5-Lab-Example/combined_makefile/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Nick/Desktop/OSS/Lab5-Lab-Example/combined_makefile_cmake/CMakeFiles /mnt/c/Users/Nick/Desktop/OSS/Lab5-Lab-Example/combined_makefile_cmake/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Nick/Desktop/OSS/Lab5-Lab-Example/combined_makefile/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Nick/Desktop/OSS/Lab5-Lab-Example/combined_makefile_cmake/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named blocklibshar
+
+# Build rule for target.
+blocklibshar: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 blocklibshar
+.PHONY : blocklibshar
+
+# fast build rule for target.
+blocklibshar/fast:
+	$(MAKE) -f CMakeFiles/blocklibshar.dir/build.make CMakeFiles/blocklibshar.dir/build
+.PHONY : blocklibshar/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_block
+
+# Build rule for target.
+dynamic_block: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_block
+.PHONY : dynamic_block
+
+# fast build rule for target.
+dynamic_block/fast:
+	$(MAKE) -f CMakeFiles/dynamic_block.dir/build.make CMakeFiles/dynamic_block.dir/build
+.PHONY : dynamic_block/fast
+
+#=============================================================================
+# Target rules for targets named blocklibstat
+
+# Build rule for target.
+blocklibstat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 blocklibstat
+.PHONY : blocklibstat
+
+# fast build rule for target.
+blocklibstat/fast:
+	$(MAKE) -f CMakeFiles/blocklibstat.dir/build.make CMakeFiles/blocklibstat.dir/build
+.PHONY : blocklibstat/fast
+
+#=============================================================================
 # Target rules for targets named static_block
 
 # Build rule for target.
@@ -123,25 +162,13 @@ static_block/fast:
 	$(MAKE) -f CMakeFiles/static_block.dir/build.make CMakeFiles/static_block.dir/build
 .PHONY : static_block/fast
 
-#=============================================================================
-# Target rules for targets named BlockLib
-
-# Build rule for target.
-BlockLib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BlockLib
-.PHONY : BlockLib
-
-# fast build rule for target.
-BlockLib/fast:
-	$(MAKE) -f CMakeFiles/BlockLib.dir/build.make CMakeFiles/BlockLib.dir/build
-.PHONY : BlockLib/fast
-
 program.o: program.c.o
 
 .PHONY : program.o
 
 # target to build an object file
 program.c.o:
+	$(MAKE) -f CMakeFiles/dynamic_block.dir/build.make CMakeFiles/dynamic_block.dir/program.c.o
 	$(MAKE) -f CMakeFiles/static_block.dir/build.make CMakeFiles/static_block.dir/program.c.o
 .PHONY : program.c.o
 
@@ -151,6 +178,7 @@ program.i: program.c.i
 
 # target to preprocess a source file
 program.c.i:
+	$(MAKE) -f CMakeFiles/dynamic_block.dir/build.make CMakeFiles/dynamic_block.dir/program.c.i
 	$(MAKE) -f CMakeFiles/static_block.dir/build.make CMakeFiles/static_block.dir/program.c.i
 .PHONY : program.c.i
 
@@ -160,6 +188,7 @@ program.s: program.c.s
 
 # target to generate assembly for a file
 program.c.s:
+	$(MAKE) -f CMakeFiles/dynamic_block.dir/build.make CMakeFiles/dynamic_block.dir/program.c.s
 	$(MAKE) -f CMakeFiles/static_block.dir/build.make CMakeFiles/static_block.dir/program.c.s
 .PHONY : program.c.s
 
@@ -169,7 +198,8 @@ source/block.o: source/block.c.o
 
 # target to build an object file
 source/block.c.o:
-	$(MAKE) -f CMakeFiles/BlockLib.dir/build.make CMakeFiles/BlockLib.dir/source/block.c.o
+	$(MAKE) -f CMakeFiles/blocklibshar.dir/build.make CMakeFiles/blocklibshar.dir/source/block.c.o
+	$(MAKE) -f CMakeFiles/blocklibstat.dir/build.make CMakeFiles/blocklibstat.dir/source/block.c.o
 .PHONY : source/block.c.o
 
 source/block.i: source/block.c.i
@@ -178,7 +208,8 @@ source/block.i: source/block.c.i
 
 # target to preprocess a source file
 source/block.c.i:
-	$(MAKE) -f CMakeFiles/BlockLib.dir/build.make CMakeFiles/BlockLib.dir/source/block.c.i
+	$(MAKE) -f CMakeFiles/blocklibshar.dir/build.make CMakeFiles/blocklibshar.dir/source/block.c.i
+	$(MAKE) -f CMakeFiles/blocklibstat.dir/build.make CMakeFiles/blocklibstat.dir/source/block.c.i
 .PHONY : source/block.c.i
 
 source/block.s: source/block.c.s
@@ -187,7 +218,8 @@ source/block.s: source/block.c.s
 
 # target to generate assembly for a file
 source/block.c.s:
-	$(MAKE) -f CMakeFiles/BlockLib.dir/build.make CMakeFiles/BlockLib.dir/source/block.c.s
+	$(MAKE) -f CMakeFiles/blocklibshar.dir/build.make CMakeFiles/blocklibshar.dir/source/block.c.s
+	$(MAKE) -f CMakeFiles/blocklibstat.dir/build.make CMakeFiles/blocklibstat.dir/source/block.c.s
 .PHONY : source/block.c.s
 
 # Help Target
@@ -197,9 +229,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... static_block"
 	@echo "... rebuild_cache"
-	@echo "... BlockLib"
+	@echo "... blocklibshar"
+	@echo "... dynamic_block"
+	@echo "... blocklibstat"
+	@echo "... static_block"
 	@echo "... program.o"
 	@echo "... program.i"
 	@echo "... program.s"

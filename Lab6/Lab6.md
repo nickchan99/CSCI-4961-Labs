@@ -64,3 +64,15 @@ Running this spits out a MongoDB error:
 To fix this, we can create docker-compose.yml, and `run docker-compose build`. Once this finishes, we can run `docker-compose up`, which launches the message app:
 
 ![](example04sail.png)
+
+I could not get to view any of the docker apps in my browser, but after some searching online I found this: https://github.com/docker/for-win/issues/204#issuecomment-303461340.
+
+So I went ahead and forwarded the ports in the VirtualBox instance, and it worked like a charm:
+
+![](docker_fix.png)
+
+![](docker_sails_in_browser.png)
+
+And we can interact with it from the terminal as well:
+
+![](example04messages.png)

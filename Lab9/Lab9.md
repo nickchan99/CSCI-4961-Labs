@@ -51,7 +51,7 @@ And the respective grayscale images:
 
 ![](sleeveless_grey.png)
 ![](yeezy_grey.png)
-![](jersey_gray.png)
+![](jersey_grey.png)
 
 I predicted that the jersey would be easily recognizable, but the other two would be trickier. I expected the workout top to be classified as something other than a t-shirt/top, and the sneaker to still be classified as a sneaker, but with a lower confidence due to its shape. The results were:
 
